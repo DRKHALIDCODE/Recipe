@@ -157,28 +157,25 @@
         }
 
 
-        td {
-            padding-right: 255px;
-            padding-bottom: 10px;
-            padding-top: 10px;
-            font-family: "Outfit",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-           
-           
-        }
+       
         .edit {
             color: var(--NUTMEG);
         }
         .op ,.op2{
             display: inline-block;
-            width: 50%;
+            width: 55%;
             font-family: "Outfit",sans-serif;
-            
-            padding: 10px 0 10px 22px;
+            text-indent:25px ;
+            padding: 10px 0 10px 0;
 
         }
 
         .op2 {
             color: var(--NUTMEG);
+            width: 45%;
+            text-indent: 15px;
+
+
         }
 
         hr {
