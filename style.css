@@ -1,14 +1,21 @@
-@font-face {
+/* @font-face {
+    font-family: "Young-serif";
+    src: url(https://fonts.google.com/specimen/Young+Serif);
      }
+ */
+@font-face {
+    font-family:"Outfit";
+    src: url(https://fonts.google.com/specimen/Outfit);
+}     
 
      /* RESET */
 
 
 *,*::after,*::before {
-    margin: ;
-    padding: ;
-    box-sizing: ;
-    font-family: ;
+    margin:0 ;
+    padding:0 ;
+    box-sizing: border-box ;
+
 }
 
 
@@ -19,6 +26,17 @@
 :root {
 /* COLORS */
 
+
+
+--NUTMEG: hsl(14, 45%, 36%);
+--DARKRASPBERRY: hsl(332, 51%, 32%);
+
+--WHITE: hsl(0, 0%, 100%);
+--ROSEWHITE: hsl(330, 100%, 98%);
+--EGGSHELL: hsl(30, 54%, 90%);
+--LIGHTGREY: hsl(30, 18%, 87%);
+--WENGEBROWN: hsl(30, 10%, 34%);
+--DARKCHARCOAL: hsl(24, 5%, 18%);
 
 /* FONTS */
 
@@ -31,12 +49,37 @@
 
        /* UTILITY-CLASSES */
 
+       img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 10px;
+       }
+
 
 
        /* HTML */
+       html {
+        background-color: rgb(243, 229, 216);
+       }
 
 
        /* BODY */
+
+       body {
+        margin: 100px auto;
+        max-width: 55%;
+        height: auto;
+        padding: 30px;
+        background-color: var(--WHITE);
+        border-radius: 20px;
+        color: var(--DARKCHARCOAL);
+       }
+         
+       section {
+        padding: 15px 0;
+       }
+
 
 
 
@@ -52,7 +95,97 @@
 
 
        /* PARAGRAPHS */
+       p {
+        font-size: 1rem;
+        padding: 20px 0;
+       }
 
+       p,li,h3 {
+        font-family: "Outfit",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       }
 
        /* Hs */
 
+       h1,h2 {
+        font-family:"Young-Serif",sans-serif;
+        padding: 10px 0;
+        
+       }
+
+       h3 {
+        padding: 5px 0;
+        color: var(--DARKRASPBERRY);
+       }
+       h2 {
+        color: var(--NUTMEG);
+       }
+
+       h1 {
+        color: var(--DARKCHARCOAL);
+        font-size: 2.5rem;
+       }
+    
+
+       /* LISTS */
+
+       ul,ol {
+        list-style-position: inside;
+       }
+
+       li {
+        padding: 5px;
+         }
+
+        li::marker {
+            color: var(--NUTMEG);
+            display: block;
+           } 
+
+       span {
+        color: var(--DARKCHARCOAL);
+        
+        }
+
+        .instp {
+            display: inline-block;
+        }
+
+
+       .main__div {
+        background-color: var(--ROSEWHITE);
+        padding:20px ;
+        }
+
+
+        td {
+            padding-right: 255px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            font-family: "Outfit",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           
+           
+        }
+        .edit {
+            color: var(--NUTMEG);
+        }
+        .op ,.op2{
+            display: inline-block;
+            width: 50%;
+            font-family: "Outfit",sans-serif;
+            
+            padding: 10px 0 10px 22px;
+
+        }
+
+        .op2 {
+            color: var(--NUTMEG);
+        }
+
+        hr {
+            opacity: 50%;
+        }
+      
+
+        
+
+        
